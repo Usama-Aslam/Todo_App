@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+    <title>Todo App</title>
+    <link rel="stylesheet" href="css/todo.css">
+    </style>
+</head>
+<body>
+        <h1>TODO App</h1>
+    <div id="textfield_div">
+        <h2>Enter Task</h2>
+        <a href="#" class="log-in" onclick="logOut()" id="login">Log In</a>
+        <a href="#" class="log-out" onclick="logOut()" id="logout">Log Out</a>
+        <input type="text" placeholder="What's in your mind?" id="val">
+        <button id="btn">Insert</button>
+    </div>
+    <div id="ul_style_div">
+            <h1>Pending<button id="del_button" onclick="del()">Delete All</button></h1>
+            
+            <ul id="list">
+            </ul>
+        </div>
+</body>
+<script src="js/app.js"></script>
+</html>
